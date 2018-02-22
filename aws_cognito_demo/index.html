@@ -1,0 +1,78 @@
+<html>
+    <head>
+        
+        <script src="./scripts/aws-cognito-sdk.min.js"></script>
+        <script src="./scripts/amazon-cognito-identity.min.js"></script>
+        <!-- optional: only if you use other AWS services -->
+        
+    </head>
+    <body>
+        
+        <div>
+            <p>User:</p>
+            <p id="username"></p>
+        </div>
+        
+        <div>
+            <h1> Log In</h1>
+            <form>
+                <label>UserName:</label>
+                <input type="email" name="username-login" id= "username-login"/>
+                <br/>
+                <br/>
+                <label>Password:</label>
+                <input type="password" name="password-login" id = "password-login"/>
+                <br/>
+                <br/>
+                <input type="submit" id="login-submit-button"/>
+            </form>
+        </div>
+        
+        <div>
+            <h1> Sign up here!</h1>
+            <form>
+                <label>Email</label>
+                <input type = "text" name = "email" id = "email-input"/>
+                <br/>
+                <br/>
+                <label>Password</label>
+                <input type = "password" name = "password" id = "password-input"/>
+                
+                <br/>
+                <br/>
+                <input type="submit" id = "sign-up-submit-button"/>
+                       
+            </form>
+        </div>
+        
+        <div>
+            <h1> Confirm Yourself</h1>
+            <p> Enter the confirmation code you recieved</p>
+            <form>
+                <label>UserName</label>
+                <input type = "text" name = "email" id = "user-confirm"/>
+                <br/>
+                <br/>
+                <label>Confirm-code</label>
+                <input type = "text" name = "confirm-code" id = "confirm-code"/>
+                
+                <br/>
+                <br/>
+                <label>Confirm</label>
+                <input type="submit" id = "confirm-submit-button"/>
+                <br/>
+                <br/>
+                <label>Resend Confirmation Code</label>
+                <input type="submit" name = "Resend" id = "reconfirm-submit-button"/>
+                       
+            </form>
+        </div>
+        
+        <script src="./scripts/signup.js"></script>
+        <script src="./scripts/signin.js"></script>
+        <script src="./scripts/app.js"></script>
+        <script src="./scripts/confirmation.js"></script>
+        <script src="./scripts/reconfirm.js"></script>
+        <script src="./scripts/sessions.js"></script>
+    </body>
+</html>
